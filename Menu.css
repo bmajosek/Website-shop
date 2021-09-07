@@ -1,0 +1,56 @@
+* {
+    font-family: 'Monda', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.wszystko{
+    overflow: hidden;
+    background-color: black;
+    
+}
+.wszystko li {
+    float: left;
+    text-align: center;
+    color: white;
+    padding: 14px 5%;
+    text-decoration: none;
+}
+.pasek {
+    float: left;
+    overflow: hidden;
+}
+.pasek .pasekprz{
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 95px;
+    background-color: inherit;
+    margin: 0;
+
+}
+.pasek li:hover, .pasek:hover .pasekprz, .wszystko li:hover {
+    background-color: rgba(230, 215, 215, 0.2);
+}
+.rozwijanie {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.rozwijanie li{
+    float: none;
+    padding: 12px 24px;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+}
+.rozwijanie li:hover{
+    background-color:rgba(230, 215, 215, 0.2);;
+}
+.pasek:hover .rozwijanie{
+    display: block;
+}
